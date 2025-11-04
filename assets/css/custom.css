@@ -1,0 +1,116 @@
+/* Additional layout and content improvements */
+
+/* ----- Variables ----- */
+:root {
+    --bo-max-content-width: 1200px;
+    --bo-content-padding-horizontal: 2rem;
+    --bo-content-padding-vertical: 1.5rem;
+  }
+  
+  /* ----- Content Area Improvements ----- */
+  .bo-content {
+    padding: var(--bo-content-padding-vertical) var(--bo-content-padding-horizontal);
+  }
+  
+  /* Content article container - limits width and centers */
+  .bo-content article {
+    max-width: var(--bo-max-content-width);
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    line-height: 1.6;
+  }
+  
+  /* ----- Typography Improvements ----- */
+  
+  /* Paragraphs and lists */
+  .bo-content p {
+    margin-bottom: 1.2em;
+    max-width: 65ch; /* Improves readability by limiting line length */
+  }
+  
+  /* ----- Table of Contents Improvements ----- */
+  
+  /* TOC Container */
+  .bo-toc-main {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - var(--bo-header-height) - var(--bo-footer-height) - 2rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bo-border-color) transparent;
+    padding-right: 0.5rem;
+  }
+  
+  .bo-toc-main::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .bo-toc-main::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .bo-toc-main::-webkit-scrollbar-thumb {
+    background-color: var(--bo-border-color);
+    border-radius: 3px;
+  }
+  
+  /* TOC Title */
+  .bo-toc-title {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--bo-fg-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--bo-border-color);
+  }
+  
+  /* TOC List */
+  .bo-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  
+  .bo-toc-list .bo-toc-list {
+    padding-left: 1em;
+    margin-top: 0.3em;
+    border-left: 1px solid var(--bo-border-color);
+  }
+  
+  /* TOC Items */
+  .bo-toc-item {
+    margin-bottom: 0.25em;
+    line-height: 1.3;
+  }
+  
+  /* TOC Links */
+  .bo-toc-link {
+    display: block;
+    padding: 0.3em 0.5em;
+    color: var(--bo-fg-color-light);
+    border-left: 2px solid transparent;
+    transition: color 0.2s, border-left-color 0.2s, background-color 0.2s;
+    text-decoration: none;
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .bo-toc-link:hover {
+    color: var(--bo-fg-color);
+    background-color: rgba(100, 100, 100, 0.05);
+    text-decoration: none;
+  }
+  
+  /* Active TOC Item */
+  .bo-toc-item.is-active-toc > .bo-toc-link {
+    color: var(--bo-accent-color);
+    border-left-color: var(--bo-accent-color);
+    background-color: rgba(33, 150, 243, 0.05);
+    font-weight: 500;
+  }
