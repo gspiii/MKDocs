@@ -1,7 +1,8 @@
 # Site Information
 site_name: Managed Services KB
-repo_url: https://github.com/rivcoit/MKDocs
-repo_name: rivcoit/MKDocs
+site_url: https://gspiii.github.io/MKDocs/
+repo_url: https://github.com/gspiii/MKDocs
+repo_name: gspiii/MKDocs
 edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2025 RCIT
 
