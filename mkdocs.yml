@@ -93,6 +93,7 @@ nav:
         - Additional Applications: M365/PowerBI/datagateways/gateway-additional-applications.md
   - Misc:
     - Syncs: Misc/Syncs.md
+    - PowerShell Profile: Misc/PowerShellProfile.md
 #  - Sharepoint: Sharepoint.md
   - Teams:
     - General Information: Teams.md
