@@ -1,8 +1,7 @@
 # Site Information
 site_name: Managed Services KB
-site_url: https://gspiii.github.io/MKDocs/
-repo_url: https://github.com/gspiii/MKDocs
-repo_name: gspiii/MKDocs
+repo_url: https://github.com/rivcoit/MKDocs
+repo_name: rivcoit/MKDocs
 edit_uri: edit/main/docs/
 copyright: Copyright &copy; 2025 RCIT
 
@@ -93,7 +92,6 @@ nav:
         - Additional Applications: M365/PowerBI/datagateways/gateway-additional-applications.md
   - Misc:
     - Syncs: Misc/Syncs.md
-    - PowerShell Profile: Misc/PowerShellProfile.md
 #  - Sharepoint: Sharepoint.md
   - Teams:
     - General Information: Teams.md
@@ -122,3 +120,6 @@ nav:
           - TZVM104: WebServerSupport/IIS/TZONE/TZVM104.md
           - TZVM105: WebServerSupport/IIS/TZONE/TZVM105.md
           - TZVM106: WebServerSupport/IIS/TZONE/TZVM106.md
+    - Certify The Web:
+      - Process Outline: WebServerSupport/certifytheweb/CertifyTheWeb.md
+      - Deployment Guide: WebServerSupport/certifytheweb/README.md
