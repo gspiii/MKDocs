@@ -1,3 +1,8 @@
+---
+tags: [Outlook, Help Desk, Exchange, Escalation, Troubleshooting]
+last_updated: 2023-01-01
+context: Microsoft 365 GCC environment
+---
 # Troubleshooting Issues in Outlook: Help Desk vs. System Administrator
 
 Understanding whether an issue with Microsoft Outlook should be addressed by Help Desk support or escalated to a System Administrator is crucial for efficient problem resolution. Below is a guideline differentiating the responsibilities.
@@ -43,13 +48,14 @@ System Administrators handle more complex, technical issues, often involving bac
    - Configuring encryption, archiving, and data retention policies.
 
 ### 4. **Large Scale Deployments:**
-   - Managing deployment of Outlook updates or upgrades. (This is currently handled by another group)
-   - Addressing compatibility and integration issues with enterprise systems.
+- Managing deployment of Outlook updates or upgrades.
+
+> **Note:** Outlook update deployments are currently managed by the Desktop Engineering team, not RCIT.
 
 ### 5. **Advanced Configuration:**
    - Solving complex configurations like group policies or automated scripts.
    - Troubleshooting integration issues between Outlook and server-based applications.
 
-## Conclusion
-
-Issues are typically directed to the Help Desk when focused on individual user problems and basic Outlook functionalities. System Administrators tackle broader, more technical, or systemic challenges. This distinction ensures effective resolution and resource management, leading to better user satisfaction.
+## Related Pages
+- [Role Clarification for M365 Services](../Role%20Clarification%20for%20M365%20Services%20and%20Help%20Desk/)
+- [Exchange General Information](../)
