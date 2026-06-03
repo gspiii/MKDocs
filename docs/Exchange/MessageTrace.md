@@ -1,8 +1,21 @@
+---
+title: Message Trace Guide - ProofPoint, On-Prem Exchange, and Exchange Online
+description: How to trace email messages across ProofPoint, on-premises Exchange 2016, and Exchange Online in the RCIT environment
+tags: [Exchange, MessageTrace, ProofPoint, Troubleshooting, Email]
+product: Exchange Online, Exchange 2016, ProofPoint
+environment: RCIT Microsoft 365 GCC
+audience: System Administrator, Help Desk
+last_updated: 2023-07-13
+author: RCIT M365 Team
+---
+
+# Message Trace Guide
+
 ## **Introduction**
 
 In regards to message tracing, there are essentially 3 places to check:
 
-* [ProofPoint](https://003c2e01.pphosted.com:10001/admin) (anything inbound/outbound to or from external addresses)
+* [ProofPoint](anything inbound/outbound to or from external addresses)
 
 * On-Prem mail servers (anything sent through SMTP, such as printers or intranet websites)
 
@@ -10,7 +23,7 @@ In regards to message tracing, there are essentially 3 places to check:
 
 ### **ProofPoint** 
 
-[ProofPoint](https://003c2e01.pphosted.com:10001/admin) can be used for searching email that has been sent in/out of the domain. This will return no results if searching for mailsend between two @rivco.org users. For a general outline of the mail process, refer to [mail flow in general information](/Exchange/#mail-flow)
+[ProofPoint] can be used for searching email that has been sent in/out of the domain. This will return no results if searching for mailsend between two @rivco.org users. For a general outline of the mail process, refer to [mail flow in general information](/Exchange/#mail-flow)
 
 ![Screenshot](../img/proofpoint1.PNG)
 
@@ -18,7 +31,7 @@ In the image above, Smart Search has various fields to search for. The default i
 
 ![Screenshot](../img/proofpoint2.PNG)
 
-The above being an example of such a label. In this case, the email is in the users quarantine which can be released by the user once logging into [https://myspam.rivco.org:10020/euweb/login](https://myspam.rivco.org:10020/euweb/login)
+The above being an example of such a label. In this case, the email is in the users quarantine which can be released by the user once logging into -internal spam prortal
 
 ???+ Example
     ![Screenshot](../img/proofpoint3.PNG)
