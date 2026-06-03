@@ -988,11 +988,12 @@
                 
                 <article class="bo-article">
                     
-                        <h2 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+                        <h1 id="message-trace-guide">Message Trace Guide<a class="headerlink" href="#message-trace-guide" title="Permanent link">¶</a></h1>
+<h2 id="introduction"><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
 <p>In regards to message tracing, there are essentially 3 places to check:</p>
 <ul>
 <li>
-<p><a href="https://003c2e01.pphosted.com:10001/admin">ProofPoint</a> (anything inbound/outbound to or from external addresses)</p>
+<p><a href="anything inbound/outbound to or from external addresses">ProofPoint</a></p>
 </li>
 <li>
 <p>On-Prem mail servers (anything sent through SMTP, such as printers or intranet websites)</p>
@@ -1002,11 +1003,11 @@
 </li>
 </ul>
 <h3 id="proofpoint"><strong>ProofPoint</strong><a class="headerlink" href="#proofpoint" title="Permanent link">¶</a></h3>
-<p><a href="https://003c2e01.pphosted.com:10001/admin">ProofPoint</a> can be used for searching email that has been sent in/out of the domain. This will return no results if searching for mailsend between two @rivco.org users. For a general outline of the mail process, refer to <a href="/Exchange/#mail-flow">mail flow in general information</a></p>
+<p>[ProofPoint] can be used for searching email that has been sent in/out of the domain. This will return no results if searching for mailsend between two @rivco.org users. For a general outline of the mail process, refer to <a href="/Exchange/#mail-flow">mail flow in general information</a></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/proofpoint1.PNG" data-desc-position="bottom"><img alt="Screenshot" src="../../img/proofpoint1.PNG"></a></p>
 <p>In the image above, Smart Search has various fields to search for. The default is 24 hour search, however can be extended as needed. You can see under the <code>Final Action</code> column an emails status. Ideally <code>Continued</code> is the status, however other status descriptions such as <code>Quarantined; Discarded</code> may also apply</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/proofpoint2.PNG" data-desc-position="bottom"><img alt="Screenshot" src="../../img/proofpoint2.PNG"></a></p>
-<p>The above being an example of such a label. In this case, the email is in the users quarantine which can be released by the user once logging into <a href="https://myspam.rivco.org:10020/euweb/login">https://myspam.rivco.org:10020/euweb/login</a></p>
+<p>The above being an example of such a label. In this case, the email is in the users quarantine which can be released by the user once logging into -internal spam prortal</p>
 <details class="example" open="open">
 <summary>Example</summary>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/proofpoint3.PNG" data-desc-position="bottom"><img alt="Screenshot" src="../../img/proofpoint3.PNG"></a></p>
@@ -1057,7 +1058,7 @@ Depending on the mail route, it's always worth checking <code>rcit-16exch01</cod
                             <svg class="bo-meta-icon" viewBox="0 0 16 16" width="14" height="14">
                                 <path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"></path>
                             </svg>
-                            <span>Last updated: <time datetime="&lt;span class=" git-revision-date-localized-plugin="" git-revision-date-localized-plugin-datetime"="" title="June 3, 2026 18:23:05 UTC">June 3, 2026 18:23:05</time></span>"&gt;<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="June 3, 2026 18:23:05 UTC">June 3, 2026 18:23:05</span>
+                            <span>Last updated: <time datetime="&lt;span class=" git-revision-date-localized-plugin="" git-revision-date-localized-plugin-datetime"="" title="June 3, 2026 22:46:17 UTC">June 3, 2026 22:46:17</time></span>"&gt;<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="June 3, 2026 22:46:17 UTC">June 3, 2026 22:46:17</span>
                         </div>
                         
                         
@@ -1091,6 +1092,12 @@ Depending on the mail route, it's always worth checking <code>rcit-16exch01</cod
         
             
     <li class="bo-toc-item">
+        <a href="#message-trace-guide" class="bo-toc-link">Message Trace Guide</a>
+        
+            <ul class="bo-toc-list is-child-list">
+                
+                    
+    <li class="bo-toc-item">
         <a href="#introduction" class="bo-toc-link">Introduction</a>
         
             <ul class="bo-toc-list is-child-list">
@@ -1112,6 +1119,11 @@ Depending on the mail route, it's always worth checking <code>rcit-16exch01</cod
                     
     <li class="bo-toc-item">
         <a href="#exchange-online" class="bo-toc-link">Exchange Online</a>
+        
+    </li>
+ 
+                
+            </ul>
         
     </li>
  
